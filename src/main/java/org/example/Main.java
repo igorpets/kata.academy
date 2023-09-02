@@ -32,7 +32,7 @@ public class Main {
         person1.age = 34;
         Person person2 = new Person();
         person2.name = "Михаил";
-        person2.age = 23;
+        person2.age = 78;
 
         person1.print();
         person1.sayHello();
@@ -45,8 +45,13 @@ class Person {
     String name;
     int age;
     void print(){
-        for (int i=0; i<3;i++)
-            System.out.println("Меня зовут = " + name+", мне "+ age +" лет. Моя пенсия "+ retPassion());
+        for (int i=0; i<3;i++) {
+            if (retPassion()>0)
+                System.out.println("Меня зовут = " + name + ", мне " + age + " лет. Моя пенсия через " + retPassion());
+            else
+                System.out.println("Меня зовут = " + name + ", мне " + age + " лет. Я уже на пенсии");
+
+        }
     }
     void sayHello(){
         System.out.println("Привет " +name+"!");
