@@ -1,6 +1,6 @@
 package org.example;
 
-import java.util.Arrays;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args)
@@ -13,9 +13,9 @@ public class Main {
         double myDouble;
         float myFloat;
         char myChar;
-        myInt = 570101030;
+        myInt = new Random().nextInt();
         myShort = 32321;
-        myByte = 34;
+        myByte = (byte) (myInt % 100);
         myLong = 92312345123921212L;
         if (myByte > 15)
             myBool = true;
@@ -30,16 +30,28 @@ public class Main {
         Person person1 = new Person();
         person1.name = "Egor";
         person1.age = 34;
-        System.out.println("Меня зовут = " + person1.name+", мне "+person1.age +" лет.");
-
         Person person2 = new Person();
         person2.name = "Михаил";
         person2.age = 23;
-        System.out.println("Меня зовут = " + person2.name+", мне "+person2.age +" лет.");
+
+        person1.print();
+        person1.sayHello();
+        person2.print();
+        person2.sayHello();
     }
 }
 
 class Person {
     String name;
     int age;
+    void print(){
+        for (int i=0; i<3;i++)
+            System.out.println("Меня зовут = " + name+", мне "+ age +" лет. Моя пенсия "+ retPassion());
+    }
+    void sayHello(){
+        System.out.println("Привет " +name+"!");
+    }
+    int retPassion(){
+        return 65-age;
+    }
 }
