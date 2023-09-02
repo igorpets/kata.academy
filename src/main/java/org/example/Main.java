@@ -6,9 +6,11 @@ public class Main {
         int myInt;
         short myShort;
         long myLong;
+        boolean myBool;
         myInt = 57;
         myShort = 123;
         myLong = 12312345392L;
-        System.out.println("Hello world "+myInt+" "+ myShort+" !");
+        myBool = true;
+        System.out.println("Hello world "+myInt+" "+ myShort+" "+myLong+" "+ myBool+" !");
     }
 }
