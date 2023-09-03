@@ -21,11 +21,14 @@ public class Main {
             myBool = true;
         else
             myBool = false;
-        myDouble = 1.002;
-        myFloat = 2.008f;
+        myDouble = 1.093;
+        myFloat = 3/2f;
+        myFloat += 4f;
         myChar = 'A';
         System.out.println("Hello world 1 "+myByte+" "+ myShort+" "+myInt+" "+ myLong+" !");
         System.out.println("Hello world 2 "+myFloat+" "+ myDouble+" "+myChar+" "+ myBool+" !");
+        myFloat++;
+        System.out.println("Hello world 3 "+myFloat);
 
         Person person1 = new Person();
         person1.name = "Egor";
@@ -38,6 +41,13 @@ public class Main {
         person1.sayHello();
         person2.print();
         person2.sayHello();
+
+        String fname, lname, phone;
+        fname = "Ввсилий";
+        lname = "Петров";
+        phone = "+7989-34-56";
+        System.out.println(fname+" "+ lname+" "+ );
+
     }
 }
 
