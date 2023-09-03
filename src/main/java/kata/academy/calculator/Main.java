@@ -36,8 +36,8 @@ public class Main {
     }
 
     public static String calc(String input) throws LogicException {
-        System.out.println(input);
-        String[] elements = input.split(" ");
+        // Сразу приводим к большим буквам.
+        String[] elements = input.toUpperCase().split(" ");
         if (elements.length != 3)
             throw new LogicException("Ошибка, введите 3 параметра.");
         Operations operator = Calculator.get_operation(elements[1].charAt(0));

@@ -11,6 +11,6 @@ class CalculatorArabic extends Calculator {
 
     @Override
     public String getResult() {
-        return "IV";
+        return String.valueOf(result);
     }
 }

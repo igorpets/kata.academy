@@ -6,7 +6,7 @@ abstract class Calculator {
     protected NumberTypes ntype = NumberTypes.EMPTY;
     protected int operand1;
     protected int operand2;
-    protected int result;
+    protected int result = 0;
     protected Operations operation = Operations.EMPTY;
 
     Calculator(String num1, String num2, Operations operation) {
@@ -15,7 +15,12 @@ abstract class Calculator {
 
     // Выполняем операцию.
     public void go() {
-
+        switch (operation) {
+            case ADD -> result = operand1 + operand2;
+            case SUB -> result = operand1 - operand2;
+            case MUL -> result = operand1 * operand2;
+            case DIV -> result = operand1 / operand2;
+        }
     }
 
     protected void checkOperands() throws LogicException {

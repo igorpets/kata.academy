@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5" />
+    <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorArabic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorArabic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorRoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorRoman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,16 +49,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="kata.academy.calculator" />
@@ -142,6 +149,7 @@
       <workItem from="1693680470485" duration="4765000" />
       <workItem from="1693727679185" duration="7648000" />
       <workItem from="1693735470555" duration="16826000" />
+      <workItem from="1693766460346" duration="2223000" />
     </task>
     <servers />
   </component>
