@@ -1,4 +1,4 @@
-package org.example;
+package org.example1;
 
 import java.util.Random;
 
@@ -61,10 +61,25 @@ public class Main {
         System.out.println(result.trim() + "!");
 
         String str = new String("JavaHolder");
-        StringBuilder stringBuilder = new StringBuilder("JavaHoldeR");
-        stringBuilder.append("ParentMini1234567890parent4566242343243242432442");
+        StringBuilder stringBuilder = new StringBuilder(20);
+        System.out.println("1# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
         stringBuilder.ensureCapacity(50);
-        System.out.println(stringBuilder + " capacity = " + stringBuilder.capacity());
+        //stringBuilder.setLength(200);
+        System.out.println("2# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+        stringBuilder.append("JavaHoldeR");
+        System.out.println("3# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+        stringBuilder.append("ParentMini1234567890parent4566242343243242432442");
+        System.out.println("4# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+        stringBuilder.insert(1, "=ADD=");
+        System.out.println("5# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+        stringBuilder.delete(1, 6);
+        stringBuilder.delete(20, 150);
+        System.out.println("6# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+        stringBuilder.reverse();
+        System.out.println("7# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
+
+        Robot robot = new Robot(new Body(), new SmallHead());
+
     }
 }
 
