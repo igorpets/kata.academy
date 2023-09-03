@@ -41,11 +41,15 @@ public class Main {
         person2.print();
         person2.sayHello();
 
-        String fname, lname, phone;
+        String fname, lname, phone, space;
         fname = "Ввсилий";
         lname = "Петров";
         phone = "+7989-34-56";
-        System.out.println(fname + " " + lname + " " +);
+        space = " ";
+        System.out.println(fname + space + lname + space + phone);
+
+        String cmp1="Java", cmp2="JaVa";
+        System.out.println(cmp1.compareTo(cmp2)+" "+cmp1.compareToIgnoreCase(cmp2));
 
     }
 }
