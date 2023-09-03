@@ -3,7 +3,7 @@ package kata.academy.calculator;
 import kata.academy.calculator.*;
 
 public class TestCalculator {
-    public static void main(String[] args) throws LogicException{
+    public static void main(String[] args) {
         // Тестирование Calculator.get_type
         if (Calculator.get_type("123450") != NumberTypes.ARABIC)
             System.out.println("Ошибка 101 Calculator.get_type ожидался NumberTypes.ARABIC");
@@ -22,5 +22,9 @@ public class TestCalculator {
 
         if (RomanNumeral.romanToArabic("MMXVIII") != 2018)
             System.out.println("Ошибка 201 RomanNumeral.romanToArabic ожидался 2018");
+        if (RomanNumeral.romanToArabic("VIII") != 8)
+            System.out.println("Ошибка 202 RomanNumeral.romanToArabic ожидался 8");
+        if (RomanNumeral.romanToArabic("СLI") != 151)
+            System.out.println("Ошибка 203 RomanNumeral.romanToArabic ожидался 151");
     }
 }
