@@ -32,19 +32,6 @@ abstract class Calculator {
     // Вывод результата на экран в заданном формате Калькулятора.
     abstract public String getResult();
 
-    // Определяет тип операнда.
-    public static NumberTypes get_type(String operand) {
-        NumberTypes result = NumberTypes.EMPTY;
-        if (operand.length() > 0) {
-            if (operand.equals(operand.replaceAll("\\D", ""))) {
-                result = NumberTypes.ARABIC;
-            } else if (operand.replaceAll("[IVLCDM]", "").length() == 0) {
-                result = NumberTypes.ROMAN;
-            }
-        }
-        return result;
-    }
-
     // Определяет тип операции (+-*/).
     // Если ошибка, возвращает EMPTY.
     public static Operations get_operation(char operation) {

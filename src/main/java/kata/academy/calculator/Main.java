@@ -44,8 +44,8 @@ public class Main {
         if (operator == Operations.EMPTY) {
             throw new LogicException("Введите оператор из списка [+-*/].");
         }
-        NumberTypes t1 = Calculator.get_type(elements[0]);
-        NumberTypes t2 = Calculator.get_type(elements[2]);
+        NumberTypes t1 = NumberTypes.get_type(elements[0]);
+        NumberTypes t2 = NumberTypes.get_type(elements[2]);
         if (t1 == NumberTypes.EMPTY || t2 == NumberTypes.EMPTY)
             throw new LogicException("Операнды в неверном формате.");
         if (t1 != t2)
