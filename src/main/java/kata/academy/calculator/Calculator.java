@@ -1,5 +1,7 @@
 package kata.academy.calculator;
 
+import java.util.List;
+
 abstract class Calculator {
     protected NumberTypes ntype = NumberTypes.EMPTY;
     protected int operand1;
@@ -16,7 +18,7 @@ abstract class Calculator {
 
     }
 
-    protected void checkOperands() throws LogicException{
+    protected void checkOperands() throws LogicException {
         if (operand1 < 0)
             throw new LogicException("Первое число меньше 0.");
         if (operand1 > 10)
@@ -36,7 +38,7 @@ abstract class Calculator {
         if (operand.length() > 0) {
             if (operand.equals(operand.replaceAll("\\D", ""))) {
                 result = NumberTypes.ARABIC;
-            } else if (operand.replaceAll("[IVX]", "").length()==0) {
+            } else if (operand.replaceAll("[IVLCDM]", "").length() == 0) {
                 result = NumberTypes.ROMAN;
             }
         }
@@ -45,7 +47,7 @@ abstract class Calculator {
 
     // Определяет тип операции (+-*/).
     // Если ошибка, возвращает EMPTY.
-    public static Operations get_operation(char operation){
+    public static Operations get_operation(char operation) {
         Operations result = Operations.EMPTY;
         switch (operation) {
             case '+' -> result = Operations.ADD;

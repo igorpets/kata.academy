@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorArabic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/CalculatorRoman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/LogicException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/NumberTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/RomanNumeral.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +132,7 @@
       <updated>1693680465546</updated>
       <workItem from="1693680470485" duration="4765000" />
       <workItem from="1693727679185" duration="7648000" />
-      <workItem from="1693735470555" duration="14538000" />
+      <workItem from="1693735470555" duration="16366000" />
     </task>
     <servers />
   </component>
