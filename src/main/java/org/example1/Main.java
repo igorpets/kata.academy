@@ -99,8 +99,8 @@ public class Main {
         } catch (IOException e) {
             System.out.println("IO " + e.toString());
         }
-
-
+        String str1 = "A123450B";
+        System.out.println(str1.replaceAll("\\D", ""));
     }
 
     private static void myReadFile() throws FileNotFoundException {
