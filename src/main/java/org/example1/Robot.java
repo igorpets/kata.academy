@@ -1,28 +1,17 @@
 package org.example1;
 
-public class Robot {
-    Head head;
-    Body body;
+public class Robot<HeadT, BodyT> {
+    HeadT head;
+    BodyT body;
 
-    Robot(Body body, Head head) {
+    Robot(BodyT body, HeadT head) {
         this.body = body;
         this.head = head;
     }
 
-    public Head getHead() {
-        return head;
-    }
-
-    public Body getBody() {
-        return body;
-    }
-
-    public void setHead(Head head) {
-        this.head = head;
-    }
-
-    public void setBody(Body body) {
-        this.body = body;
+    @Override
+    public String toString() {
+        return "Robot{" + head + body + '}';
     }
 
     @Override
@@ -30,21 +19,32 @@ public class Robot {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Robot robot = (Robot) o;
+        Robot<?, ?> robot = (Robot<?, ?>) o;
 
-        if (head != null ? !head.equals(robot.head) : robot.head != null) return false;
-        return body != null ? body.equals(robot.body) : robot.body == null;
+        if (!head.equals(robot.head)) return false;
+        return body.equals(robot.body);
     }
 
     @Override
     public int hashCode() {
-        int result = head != null ? head.hashCode() : 0;
-        result = 31 * result + (body != null ? body.hashCode() : 0);
+        int result = head.hashCode();
+        result = 31 * result + body.hashCode();
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "Robot{" + head + body + '}';
+    public HeadT getHead() {
+        return head;
+    }
+
+    public void setHead(HeadT head) {
+        this.head = head;
+    }
+
+    public BodyT getBody() {
+        return body;
+    }
+
+    public void setBody(BodyT body) {
+        this.body = body;
     }
 }
