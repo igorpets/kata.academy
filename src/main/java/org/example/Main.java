@@ -3,8 +3,7 @@ package org.example;
 import java.util.Random;
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int myInt;
         short myShort;
         byte myByte;
@@ -22,13 +21,13 @@ public class Main {
         else
             myBool = false;
         myDouble = 1.093;
-        myFloat = 3/2f;
+        myFloat = 3 / 2f;
         myFloat += 4f;
         myChar = 'A';
-        System.out.println("Hello world 1 "+myByte+" "+ myShort+" "+myInt+" "+ myLong+" !");
-        System.out.println("Hello world 2 "+myFloat+" "+ myDouble+" "+myChar+" "+ myBool+" !");
+        System.out.println("Hello world 1 " + myByte + " " + myShort + " " + myInt + " " + myLong + " !");
+        System.out.println("Hello world 2 " + myFloat + " " + myDouble + " " + myChar + " " + myBool + " !");
         myFloat++;
-        System.out.println("Hello world 3 "+myFloat);
+        System.out.println("Hello world 3 " + myFloat);
 
         Person person1 = new Person();
         person1.name = "Egor";
@@ -46,7 +45,7 @@ public class Main {
         fname = "Ввсилий";
         lname = "Петров";
         phone = "+7989-34-56";
-        System.out.println(fname+" "+ lname+" "+ );
+        System.out.println(fname + " " + lname + " " +);
 
     }
 }
@@ -54,19 +53,22 @@ public class Main {
 class Person {
     String name;
     int age;
-    void print(){
-        for (int i=0; i<3;i++) {
-            if (retPassion()>0)
+
+    void print() {
+        for (int i = 0; i < 3; i++) {
+            if (retPassion() > 0)
                 System.out.println("Меня зовут = " + name + ", мне " + age + " лет. Моя пенсия через " + retPassion());
             else
                 System.out.println("Меня зовут = " + name + ", мне " + age + " лет. Я уже на пенсии");
 
         }
     }
-    void sayHello(){
-        System.out.println("Привет " +name+"!");
+
+    void sayHello() {
+        System.out.println("Привет " + name + "!");
     }
-    int retPassion(){
-        return 65-age;
+
+    int retPassion() {
+        return 65 - age;
     }
 }
