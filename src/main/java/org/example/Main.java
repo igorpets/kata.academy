@@ -48,9 +48,23 @@ public class Main {
         space = " ";
         System.out.println(fname + space + lname + space + phone);
 
-        String cmp1="Java", cmp2="JaVa";
-        System.out.println(cmp1.compareTo(cmp2)+" "+cmp1.compareToIgnoreCase(cmp2)+" "+cmp1.concat(cmp2));
-        System.out.println(cmp1.equals(cmp2) + " "+cmp1.equalsIgnoreCase(cmp2));
+        String cmp1 = "Java", cmp2 = "JaVa";
+        System.out.println(cmp1.compareTo(cmp2) + " " + cmp1.compareToIgnoreCase(cmp2) + " " + cmp1.concat(cmp2));
+        System.out.println(cmp1.equals(cmp2) + " " + cmp1.equalsIgnoreCase(cmp2));
+
+        String line = "first string on the board everyday";
+        String[] strings = line.split(" ");
+        String result = "";
+        for (String word : strings) {
+            result += word.toUpperCase() + " ";
+        }
+        System.out.println(result.trim() + "!");
+
+        String str = new String("JavaHolder");
+        StringBuilder stringBuilder = new StringBuilder("JavaHoldeR");
+        stringBuilder.append("ParentMini1234567890parent4566242343243242432442");
+        stringBuilder.ensureCapacity(50);
+        System.out.println(stringBuilder + " capacity = " + stringBuilder.capacity());
     }
 }
 
