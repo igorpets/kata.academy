@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example1/HeadTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example1/Leg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/BigHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/BigHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Body.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Head.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/MediumHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/MediumHead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/SmallHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/SmallHead.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="COMPILER_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Xlint:unchecked" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -50,15 +45,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propCompiler"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example1.Main" />
@@ -89,7 +85,7 @@
       <updated>1693680465546</updated>
       <workItem from="1693680470485" duration="4765000" />
       <workItem from="1693727679185" duration="7648000" />
-      <workItem from="1693735470555" duration="2183000" />
+      <workItem from="1693735470555" duration="5408000" />
     </task>
     <servers />
   </component>

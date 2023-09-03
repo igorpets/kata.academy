@@ -1,6 +1,11 @@
 package org.example1;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -85,8 +90,25 @@ public class Main {
         robot1.getHead().attack();
         robot2.getHead().defence();
         robot3.getHead().repair();
+
+        try (FileReader file = new FileReader("gradlew")) {
+            myReadFile();
+            Scanner scan = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("FnF" + e.toString());
+        } catch (IOException e) {
+            System.out.println("IO " + e.toString());
+        }
+
+
+    }
+
+    private static void myReadFile() throws FileNotFoundException {
+        FileReader file = new FileReader("BUBUtu");
+        Scanner scan = new Scanner(file);
     }
 }
+
 
 class Person {
     String name;
