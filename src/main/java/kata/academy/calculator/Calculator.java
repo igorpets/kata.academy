@@ -24,18 +24,18 @@ abstract class Calculator {
     }
 
     protected void checkOperands() throws LogicException {
-        if (operand1 < 0)
-            throw new LogicException("Первое число меньше 0.");
+        if (operand1 < 1)
+            throw new LogicException("Первое число меньше 1.");
         if (operand1 > 10)
             throw new LogicException("Первое число больше 10.");
-        if (operand2 < 0)
-            throw new LogicException("Второй операнд меньше 0.");
+        if (operand2 < 1)
+            throw new LogicException("Второй операнд меньше 1.");
         if (operand2 > 10)
             throw new LogicException("Второй операнд больше 10.");
     }
 
     // Вывод результата на экран в заданном формате Калькулятора.
-    abstract public String getResult();
+    abstract public String getResult() throws LogicException;
 
     // Определяет тип операции (+-*/).
     // Если ошибка, возвращает EMPTY.

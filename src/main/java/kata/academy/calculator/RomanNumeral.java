@@ -26,16 +26,17 @@ enum RomanNumeral {
                 .collect(Collectors.toList());
     }
 
-    /*
+    /**
      * Преобразование ROMAN в ARABIC
+     * <p>
      * LET numeral be the input String representing an Roman Numeral
      * LET symbol be initialy set to RomanNumeral.values()[0]
      * WHILE numeral.length > 0:
-     *      IF numeral starts with symbol's name:
-     *          add symbol's value to the result
-     *          remove the symbol's name from the numeral's beginning
-     *      ELSE:
-     *          set symbol to the next symbol
+     * ___IF numeral starts with symbol's name:
+     * ______add symbol's value to the result
+     * ______remove the symbol's name from the numeral's beginning
+     * ___ELSE:
+     * ______set symbol to the next symbol
      **/
     public static int romanToArabic(String input) {
         String romanNumeral = input.toUpperCase();
@@ -47,6 +48,7 @@ enum RomanNumeral {
 
         while ((romanNumeral.length() > 0) && (i < romanNumerals.size())) {
             RomanNumeral symbol = romanNumerals.get(i);
+            //System.out.println(romanNumeral + " " + symbol.name());
             if (romanNumeral.startsWith(symbol.name())) {
                 result += symbol.getValue();
                 romanNumeral = romanNumeral.substring(symbol.name().length());
@@ -56,21 +58,24 @@ enum RomanNumeral {
         }
 
         if (romanNumeral.length() > 0) {
-            throw new IllegalArgumentException(input+" не может быть преобразован в Арабское число.");
+            throw new IllegalArgumentException(input + " не может быть преобразован в Римское число.");
         }
 
         return result;
     }
+
     /**
+     * Преобразование ARABIC в ROMAN.
+     * <p>
      * LET number be an integer between 1 and 4000
      * LET symbol be RomanNumeral.values()[0]
      * LET result be an empty String
      * WHILE number > 0:
-     *     IF symbol's value <= number:
-     *         append the result with the symbol's name
-     *         subtract symbol's value from number
-     *     ELSE:
-     *         pick the next symbol
+     * IF symbol's value <= number:
+     * append the result with the symbol's name
+     * subtract symbol's value from number
+     * ELSE:
+     * pick the next symbol
      **/
     public static String arabicToRoman(int number) {
         if ((number <= 0) || (number > 4000)) {
@@ -87,9 +92,8 @@ enum RomanNumeral {
             if (currentSymbol.getValue() <= number) {
                 sb.append(currentSymbol.name());
                 number -= currentSymbol.getValue();
-            } else {
+            } else
                 i++;
-            }
         }
 
         return sb.toString();

@@ -46,8 +46,10 @@ public class Main {
         }
         NumberTypes t1 = NumberTypes.get_type(elements[0]);
         NumberTypes t2 = NumberTypes.get_type(elements[2]);
-        if (t1 == NumberTypes.EMPTY || t2 == NumberTypes.EMPTY)
-            throw new LogicException("Операнды в неверном формате.");
+        if (t1 == NumberTypes.EMPTY)
+            throw new LogicException("Операнд 1 в неверном формате.");
+        if (t2 == NumberTypes.EMPTY)
+            throw new LogicException("Операнд 2 в неверном формате.");
         if (t1 != t2)
             throw new LogicException("Операнды в разных системах счисления.");
         String result = "throws Exception";

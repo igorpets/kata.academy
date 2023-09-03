@@ -9,7 +9,7 @@ enum NumberTypes {
         if (operand.length() > 0) {
             if (operand.equals(operand.replaceAll("\\D", ""))) {
                 result = NumberTypes.ARABIC;
-            } else if (operand.replaceAll("[IVLCDM]", "").length() == 0) {
+            } else if (operand.replaceAll("[IVXLCDM]", "").length() == 0) {
                 result = NumberTypes.ROMAN;
             }
         }

@@ -1,6 +1,7 @@
 package kata.academy.calculator;
 
-class LogicException extends Throwable {
-    public LogicException(String s) {
+class LogicException extends Exception {
+    public LogicException(String message) {
+        super(message);
     }
 }

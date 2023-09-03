@@ -10,7 +10,9 @@ class CalculatorRoman extends Calculator {
     }
 
     @Override
-    public String getResult() {
-        return RomanNumeral.arabicToRoman(result);
+    public String getResult() throws LogicException{
+        if (result>0)
+            return RomanNumeral.arabicToRoman(result);
+        throw new LogicException("Результат меньше 1.");
     }
 }
