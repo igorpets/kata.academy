@@ -1,12 +1,15 @@
 package org.example1;
 
-public class Robot<HeadT, BodyT> {
+public class Robot<HeadT extends Head, BodyT extends Body> {
+    static private int number_index=0;
+    private int number;
     HeadT head;
     BodyT body;
 
-    Robot(BodyT body, HeadT head) {
-        this.body = body;
+    Robot(HeadT head, BodyT body) {
         this.head = head;
+        this.body = body;
+        number = ++number_index;
     }
 
     @Override

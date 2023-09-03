@@ -78,8 +78,13 @@ public class Main {
         stringBuilder.reverse();
         System.out.println("7# " + " len=" + stringBuilder.length() + " cap = " + stringBuilder.capacity() + " " + stringBuilder);
 
-        Robot robot = new Robot(new Body(), new SmallHead());
+        Robot<BigHead, Body> robot1 = new Robot(new BigHead(), new Body());
+        Robot<MediumHead, Body> robot3 = new Robot(new MediumHead(), new Body());
+        Robot<SmallHead, Body> robot2 = new Robot(new SmallHead(), new Body());
 
+        robot1.getHead().attack();
+        robot2.getHead().defence();
+        robot3.getHead().repair();
     }
 }
 

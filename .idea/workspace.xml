@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example1/HeadTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example1/Leg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/BigHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/BigHead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Body.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Body.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Head.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Head.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/MediumHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/MediumHead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/Robot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example1/SmallHead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example1/SmallHead.java" afterDir="false" />
     </list>
@@ -24,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -68,7 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example1.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +88,8 @@
       <option name="presentableId" value="Default" />
       <updated>1693680465546</updated>
       <workItem from="1693680470485" duration="4765000" />
-      <workItem from="1693727679185" duration="7362000" />
+      <workItem from="1693727679185" duration="7648000" />
+      <workItem from="1693735470555" duration="2183000" />
     </task>
     <servers />
   </component>
