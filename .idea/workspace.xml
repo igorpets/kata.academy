@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kata/academy/calculator/TestCalculator.java" afterDir="false" />
-    </list>
+    <list default="true" id="f4615075-8d04-4cb0-bafe-c31af64dd76f" name="Changes" comment="next 5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +145,7 @@
       <workItem from="1693766460346" duration="2223000" />
       <workItem from="1693768732267" duration="5884000" />
       <workItem from="1693806038260" duration="87000" />
+      <workItem from="1693843495779" duration="71000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,10 @@
 package kata.academy.calculator;
 
+/**
+ * Тестирование калькулятора.
+ *
+ * */
+
 class TestCalculator {
     private static int test_index = 100;
     private static String code_name;
