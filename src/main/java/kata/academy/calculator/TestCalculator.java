@@ -3,6 +3,7 @@ package kata.academy.calculator;
 class TestCalculator {
     private static int test_index = 100;
     private static String code_name;
+    private static int error_count;
 
     // Тестирование
     public static void main(String[] args) throws LogicException {
@@ -25,7 +26,7 @@ class TestCalculator {
         test(RomanNumeral.romanToArabic("CLI") != 151, "ожидался 151");
         test(RomanNumeral.romanToArabic("MMXVIII") != 2018, "ожидался 2018");
         test2(RomanNumeral.arabicToRoman(7), "VII");
-        test2(RomanNumeral.arabicToRoman(151),"CLI");
+        test2(RomanNumeral.arabicToRoman(151), "CLI");
         test2(RomanNumeral.arabicToRoman(3027), "MMMXXVII");
 
         // Main
@@ -46,58 +47,52 @@ class TestCalculator {
         test2(Main.calc("IX / V"), "I");
         test2(Main.calc("X / II"), "V");
         test2(Main.calc("X / II"), "V");
+
         // Исключения в Main
-        try {
-            String tst = "XII - IV";
-            Main.calc(tst);
-            print_exception(tst, "ожидался Exception");
-        } catch (Exception e) {
-        }
+        check_exception("");
+        check_exception(" - ");
+        check_exception("XII - ");
+        check_exception("XII - IV");
+        check_exception("5 + 121");
+        check_exception("8 + VI");
+        check_exception("II + 0");
+        check_exception("8 % VI");
 
-        try {
-            String tst = "5 + 121";
-            Main.calc(tst);
-            print_exception(tst, "ожидался Exception");
-        } catch (Exception e) {
-        }
-
-        try {
-            String tst = "8 + VI";
-            Main.calc(tst);
-            print_exception(tst, "ожидался Exception");
-        } catch (Exception e) {
-        }
-
-        try {
-            String tst = "II + 0";
-            Main.calc(tst);
-            print_exception(tst,"ожидался Exception");
-        } catch (Exception e) {
-        }
-
-        try {
-            String tst = "8 % VI";
-            Main.calc(tst);
-            print_exception(tst, "ожидался Exception");
-        } catch (Exception e) {
-        }
+        // Финальная проверка результатов теста
+        if (error_count > 0)
+            System.out.println("Обнаружено " + error_count + " ошибок!");
+        else
+            System.out.println("Тест завершен успешно!");
     }
 
     private static void test(boolean condition, String error) {
         test_index++;
-        if (condition)
+        if (condition) {
+            error_count++;
             System.out.println("Ошибка " + code_name + " N" + test_index + " " + error);
+        }
     }
 
     private static void test2(String result, String etalon) {
         test_index++;
-        if (!(result.equals(etalon)))
+        if (!(result.equals(etalon))) {
+            error_count++;
             System.out.println(
                     "Ошибка " + code_name + " N" + test_index + " получили " + result + " ожидали " + etalon);
+        }
+    }
+
+    private static void check_exception(String input) {
+        try {
+            test_index++;
+            Main.calc(input);
+            print_exception(input, "ожидался Exception");
+        } catch (Exception e) {
+        }
     }
 
     private static void print_exception(String input, String error) {
-        test_index++;
-        System.out.println("Ошибка " + code_name + " N" + test_index + " ["+input+"] " + error);
+        error_count++;
+        System.out.println("Ошибка " + code_name + " N" + test_index + " [" + input + "] " + error);
     }
 }
