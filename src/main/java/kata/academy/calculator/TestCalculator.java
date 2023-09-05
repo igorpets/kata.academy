@@ -2,7 +2,6 @@ package kata.academy.calculator;
 
 /**
  * Тестирование калькулятора.
- *
  * */
 
 class TestCalculator {
