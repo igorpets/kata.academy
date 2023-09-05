@@ -30,9 +30,19 @@ package kata.academy.calculator;
  *   если результат работы меньше единицы, выбрасывается исключение
  **/
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) throws LogicException {
-        System.out.println(calc(String.join(" ", args)));
+        for (; ; ) {
+            System.out.println("Input:");
+            Scanner scan = new Scanner(System.in);
+            String input = scan.nextLine();
+            System.out.println();
+            System.out.println("Output:");
+            System.out.println(calc(input));
+            System.out.println();
+        }
     }
 
     public static String calc(String input) throws LogicException {
